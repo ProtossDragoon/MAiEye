@@ -447,6 +447,11 @@ I had a similar issue and this fixed it for me.
 4. 파이썬 모듈을 만드는 약간의 틀이 있다는 것을 알게 됨. 이 형식에 걸맞게 재구성해볼 예정
 > https://python-guide-kr.readthedocs.io/ko/latest/writing/structure.html
 
-<br>
+
+- OSS 조별 과제로 몬스터 뿐만 아니라 광석과 식물을 탐지시키는 기능 추가 예정
+
+- 2019/10/6
+> - OSS팀원 모임
+
 
 ##2019.11.05 오픈소스 팀원 참여
