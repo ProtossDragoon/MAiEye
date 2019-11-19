@@ -52,8 +52,13 @@ and <br>
 
 **Start! data generator**
 
-data generator 은 매우 간단한 두 개의 모듈로 이루어져 있습니다. 첫째는 Multi-RoI(Region of Interest)Extraction 모듈 - Image Detection 모델에 사용되는 데이터를 모으는 역할의 모듈이고, 둘째는 MapCapture 모듈 - Image Classification 모델에 사용되는 데이터를 모으는 역할의 모듈입니다.<br>
-커맨드 실행창을 키고, 해당 모듈이 있는 경로로 이동해주세요. git 저장소에서 다운로드받았다면, MAiEye\Project 폴더 안에 있을 겁니다.
+data generator 은 매우 간단한 두 개의 모듈로 이루어져 있습니다.
+1. Multi-RoI(Region of Interest)Extraction 모듈 - Image Detection 모델에 사용되는 데이터를 모으는 역할의 모듈
+2. MapCapture 모듈 - Image Classification 모델에 사용되는 데이터를 모으는 역할의 모듈입니다.
+
+<br>
+
+커맨드 실행창을 키고, 해당 모듈들의 상위 디렉토리로 이동해주세요. git 저장소에서 다운로드받았다면, MAiEye\Project 폴더일 것입니다.
 
 <br>
 
