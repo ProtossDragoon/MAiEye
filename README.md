@@ -173,6 +173,12 @@ https://github.com/thtrieu/darkflow/archive/master.zip 다운로드 하고 압�
 
 <br>
 
+CV2 모듈이 설치되어 있지 않다면 아래의 명령어를 통하여 opencv를 설치하셔야 합니다.
+```
+(base) C: [your own path] \MAiEye\Project> pip install opencv-python
+```
+
+
 이제 준비를 마쳤습니다!
 
 <br>
