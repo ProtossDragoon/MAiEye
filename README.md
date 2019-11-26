@@ -39,12 +39,7 @@ and <br>
 
 ## How to Run? (Windows Only)
 
-
-### Command
-
-<br>
-
-**Start! data generator**
+### Start! data generator
 
 data generator 은 매우 간단한 두 개의 모듈로 이루어져 있습니다.
 1. Multi-RoI(Region of Interest)Extraction 모듈 - Image Detection 모델에 사용되는 데이터를 모으는 역할의 모듈
@@ -134,7 +129,7 @@ args = vars(ap.parse_args())
 <br>
 <br>
 
-**Start! classification model trainig**
+### Start! classification model trainig
 
 아직 모듈화가 이루어지지 않았습니다.
 
@@ -183,7 +178,7 @@ https://github.com/thtrieu/darkflow/archive/master.zip 다운로드 하고 압�
 <br>
 <br>
 
-**Run Final Model!**
+### Run Final Model!
 
 아직 모듈화가 이루어지지 않았습니다. <br>
 하지만 데모 버젼을 실행해 보는 것은 어렵지 않습니다. <br>
