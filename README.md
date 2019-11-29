@@ -45,6 +45,17 @@ data generator 은 매우 간단한 두 개의 모듈로 이루어져 있습니�
 1. Multi-RoI(Region of Interest)Extraction 모듈 - Image Detection 모델에 사용되는 데이터를 모으는 역할의 모듈
 2. MapCapture 모듈 - Image Classification 모델에 사용되는 데이터를 모으는 역할의 모듈입니다.
 
+
+<br>
+
+**Dependencies**
+
+CV2 모듈이 설치되어 있지 않다면 아래의 명령어를 통하여 opencv-contrib 을 설치하셔야 합니다.
+```
+(base) C: [your own path] \MAiEye\Project> pip install opencv-contrib-python
+```
+
+
 <br>
 
 커맨드 실행창을 키고, 해당 모듈들의 상위 디렉토리로 이동해주세요. git 저장소에서 다운로드받았다면, MAiEye\Project 폴더일 것입니다.
@@ -163,9 +174,9 @@ startclassificationmodeltraining.py
 
 **Before Final Starting**
 
-우선, darkflow 에서 제공하는 cython utils 이라는 것이 전역에 설치가 되어 있어야 합니다. <br>
+우선, 저희는 학습을 위해 darkflow 라는 open source 를 사용합니다. <br>
 
-https://github.com/thtrieu/darkflow/archive/master.zip 다운로드 하고 압축풀기를 합니다. <br>
+https://github.com/thtrieu/darkflow/ 에 원본이 존재하지만, MAiEye 에는 기본적으로 설치되어 있습니다. <br>
 
 ```
 (base) C: [your own path] \darkflow-master> pip install -e .
@@ -173,9 +184,45 @@ https://github.com/thtrieu/darkflow/archive/master.zip 다운로드 하고 압�
 
 <br>
 
-CV2 모듈이 설치되어 있지 않다면 아래의 명령어를 통하여 opencv를 설치하셔야 합니다.
+
+Tensorflow 1.4 이하가 설치되어 있으신가요? 설치되어 있는지 확인하는 방법은 다음과 같습니다.
+
+1. python 실행
 ```
-(base) C: [your own path] \MAiEye\Project> pip install opencv-python
+(base) C: [path]> python
+```
+
+<br>
+
+2. tensorflow import 해보기
+```
+>>> import tensorflow   
+```
+여기서 오류가 나면 설치되어있지 않은 것입니다.
+
+<br>
+
+3. tensorflow version 확인하기
+```
+(base) C: [path]> python
+>>> import tensorflow
+>>> tensorflow.__version__ 
+```
+이것을 했을 때 2.0 이상이라면, 실행되지 않습니다! 제거 후 다시 설치해야 하니, 제거부터 따라와주세요.
+
+<br>
+
+기존에 설치되어 있던 Tensorflow 2.0 이상 제거하기
+```
+(base) C: [path]> pip uninstall tensorflow
+(base) C: [path]> pip uninstall tensorflow-gpu
+```
+
+<br>
+
+Tensorflow 새로 설치하기
+```
+(base) C: [path]> pip install tensorflow==1.4.0
 ```
 
 
