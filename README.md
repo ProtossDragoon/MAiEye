@@ -198,6 +198,7 @@ Darkflow 는 Tensorflow 설치를 필요로 합니다. Tensorflow 1.4 이하가 
 
 2. tensorflow import 해보기
 ```
+(base) C: [path]> python
 >>> import tensorflow   
 ```
 여기서 오류가 나면 설치되어있지 않은 것입니다. 설치부터 진행해 주세요.
