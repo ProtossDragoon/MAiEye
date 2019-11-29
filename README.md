@@ -172,7 +172,7 @@ startclassificationmodeltraining.py
 <br>
 <br>
 
-**Before Final Starting**
+### Before Final Starting
 
 우선, 저희는 학습을 위해 darkflow 라는 open source 를 사용합니다. <br>
 
@@ -184,8 +184,10 @@ https://github.com/thtrieu/darkflow/ 에 원본이 존재하지만, MAiEye 에�
 
 <br>
 
+Darkflow 는 Tensorflow 설치를 필요로 합니다. Tensorflow 1.4 이하가 설치되어 있으신가요? <br>
 
-Tensorflow 1.4 이하가 설치되어 있으신가요? 설치되어 있는지 확인하는 방법은 다음과 같습니다.
+
+**설치되어 있는지 확인하기**
 
 1. python 실행
 ```
@@ -198,7 +200,7 @@ Tensorflow 1.4 이하가 설치되어 있으신가요? 설치되어 있는지 �
 ```
 >>> import tensorflow   
 ```
-여기서 오류가 나면 설치되어있지 않은 것입니다.
+여기서 오류가 나면 설치되어있지 않은 것입니다. 설치부터 진행해 주세요.
 
 <br>
 
@@ -208,11 +210,11 @@ Tensorflow 1.4 이하가 설치되어 있으신가요? 설치되어 있는지 �
 >>> import tensorflow
 >>> tensorflow.__version__ 
 ```
-이것을 했을 때 2.0 이상이라면, 실행되지 않습니다! 제거 후 다시 설치해야 하니, 제거부터 따라와주세요.
+이것을 했을 때 2.0 이상의 결과가 출력되면, 실행되지 않습니다! 제거 후 다시 설치해야 하니, 제거부터 진행해 주세요.
 
 <br>
 
-기존에 설치되어 있던 Tensorflow 2.0 이상 제거하기
+**기존에 설치되어 있던 Tensorflow 2.0 이상 제거하기**
 ```
 (base) C: [path]> pip uninstall tensorflow
 (base) C: [path]> pip uninstall tensorflow-gpu
@@ -220,7 +222,7 @@ Tensorflow 1.4 이하가 설치되어 있으신가요? 설치되어 있는지 �
 
 <br>
 
-Tensorflow 새로 설치하기
+**Tensorflow 새로 설치하기**
 ```
 (base) C: [path]> pip install tensorflow==1.4.0
 ```
