@@ -63,11 +63,9 @@ class Darknet(object):
         given path to binaries/ and configs/
         """
         args = [model, FLAGS.binary]
-        print(args)
         cfg_layers = cfg_yielder(*args)
         meta = dict(); layers = list()
         for i, info in enumerate(cfg_layers):
-            print(i, info)
             if i == 0: meta = info; continue
             else: new = create_darkop(*info)
             layers.append(new)

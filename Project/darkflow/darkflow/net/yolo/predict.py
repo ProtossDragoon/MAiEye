@@ -1,9 +1,24 @@
+import sys, os
+
+currentPath = os.getcwd()
+print('path before import utils : ', currentPath, "\n", sys.path)
+
 from ...utils.im_transform import imcv2_recolor, imcv2_affine_trans
+
+currentPath = os.getcwd()
+print('path after import utils : ', currentPath, "\n", sys.path)
+
+
 from ...utils.box import BoundBox, box_iou, prob_compare
 import numpy as np
 import cv2
 import os
 import json
+
+# currentPath = os.getcwd()
+# os.chdir(os.path.join(currentPath, 'darkflow'))
+currentPath = os.getcwd()
+print('path before import cython : ', currentPath, "\n", sys.path)
 from ...cython_utils.cy_yolo_findboxes import yolo_box_constructor
 
 def _fix(obj, dims, scale, offs):
@@ -12,6 +27,7 @@ def _fix(obj, dims, scale, offs):
 		off = offs[(i + 1) % 2]
 		obj[i] = int(obj[i] * scale - off)
 		obj[i] = max(min(obj[i], dim), 0)
+
 
 def resize_input(self, im):
 	h, w, c = self.meta['inp_size']

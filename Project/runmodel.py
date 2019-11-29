@@ -2,7 +2,7 @@ import cv2
 import time
 import screeninfo
 from PIL import ImageGrab
-
+import os, sys
 
 #------------------------------------#
 #Selection of RoI - maplestory select#
@@ -55,11 +55,15 @@ model = tf.keras.models.load_model('JanghooModule_RunWithMapleGUI/Janghoo_Model/
 label = ['elinia', 'henesis', 'kerningcity', 'perion']
 
 # 2. model : loading YOLO
+sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'Darkflow'))
+currentPath = os.getcwd()
+print('path before import TFNet : ', currentPath, "\n", sys.path)
 from darkflow.net.build import TFNet
-options = {"model": "darkflow/cfg/tiny-yolo-maple.cfg",
-           "pbLoad": "darkflow/built_graph/tiny-yolo-maple.pb",
-           "metaLoad": "darkflow/built_graph/tiny-yolo-maple.meta",
-           "labels" : "darkflow/labels-maple.txt",
+#from MAiEye.Project.darkflow.net.build import TFNet
+options = {"model": "Darkflow/cfg/tiny-yolo-maple.cfg",
+           "pbLoad": "Darkflow/built_graph/tiny-yolo-maple.pb",
+           "metaLoad": "Darkflow/built_graph/tiny-yolo-maple.meta",
+           "labels" : "Darkflow/labels-maple.txt",
            "threshold": 0.05}
 tfnet = TFNet(options)
 
@@ -139,3 +143,4 @@ while True :
 
 
 print('session end')
+
