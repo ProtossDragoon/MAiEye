@@ -39,12 +39,6 @@ and <br>
 
 ## How to Run? (Windows Only)
 
-### Start! data generator
-
-data generator 은 매우 간단한 두 개의 모듈로 이루어져 있습니다.
-1. Multi-RoI(Region of Interest)Extraction 모듈 - Image Detection 모델에 사용되는 데이터를 모으는 역할의 모듈
-2. MapCapture 모듈 - Image Classification 모델에 사용되는 데이터를 모으는 역할의 모듈입니다.
-
 
 <br>
 
@@ -54,6 +48,12 @@ CV2 모듈이 설치되어 있지 않다면 아래의 명령어를 통하여 ope
 ```
 (base) C: [your own path] \MAiEye\Project> pip install opencv-contrib-python
 ```
+
+### Start! data generator
+
+data generator 은 매우 간단한 두 개의 모듈로 이루어져 있습니다.
+1. Multi-RoI(Region of Interest)Extraction 모듈 - Image Detection 모델에 사용되는 데이터를 모으는 역할의 모듈
+2. MapCapture 모듈 - Image Classification 모델에 사용되는 데이터를 모으는 역할의 모듈입니다.
 
 
 <br>
