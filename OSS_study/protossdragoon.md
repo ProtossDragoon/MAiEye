@@ -10,14 +10,16 @@
 - [dir]test
 - dependencies.txt or setup.py
 
+<br>
 
 ### 의존성을 처리하는 방법들
 
 - setup.py 를 이용하는 방법
 - setup.py 를 이용하지 않고, dependencies 파일을 별도로 관리하는 방법
 
+<br>
 
-
+### __name__ 의 의미
 
 Special Variables
 When the Python interpeter reads a source file, it first defines a few special variables. In this case, we care about the __name__ variable.
