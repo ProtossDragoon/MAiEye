@@ -246,9 +246,15 @@ Darkflow 는 Tensorflow 설치를 필요로 합니다. Tensorflow 1.4 이하가 
 
 
 주의 : Github 용량 제한 때문에, 학습된 classification 모델 파일이 존재하지 않으므로, 사용 이전에 직접 제작해야 합니다. <br>
-학습시킨 모델 (.h5 파일) 은, 지정된 이름으로 \MAiEye\Project\JanghooModule_RunWithMapleGUI\Janghoo_Model] 에 넣어 주면 됩니다.
+학습시킨 모델 (.h5 파일) 은, 지정된 이름으로 \MAiEye\Project\JanghooModule_RunWithMapleGUI\Janghoo_Model] 에 넣어 주면 됩니다. 직접 학습시킨 모델 대신, 학습된 모델을 한번 사용해 보려면 이 문서의 **Get demo** 를 참고하세요.
 
-**Get demo**
+<br>
+<br>
+
+**Get demo** 
+
+<br>
+
 몇몇 마을과 몇몇 객체에 대하여 학습시킨 데모 weight 파일은 <br>
 https://drive.google.com/open?id=19LHxJR8BRTzq-gUroIdDRCuqYk9oc35c 에서 다운로드받을 수 있습니다.
 
@@ -258,13 +264,23 @@ https://drive.google.com/open?id=19LHxJR8BRTzq-gUroIdDRCuqYk9oc35c 에서 다운
 ```
 에 넣어 줍니다. 이 weight 파일들은, 파란버섯을 detection 합니다.
 
+<br>
+
 2. Janghoo_model.h5 파일을
 ```
 \MAiEye\Project\JanghooModule_RunWithMapleGUI\Janghoo_Model\
 ```
 에 넣어 줍니다. 이 weight 파일은, 4개의 마을을 classification 합니다.
 
+<br>
 
+3. ... 파일을
+```
+```
+에 넣어 줍니다. 이 weight 파일은, 약초와 광물 일부를 detection 합니다.
+
+<br>
+<br>
 
 모델을 모두 준비한 후, 실행명령은 다음과 같습니다.
 
