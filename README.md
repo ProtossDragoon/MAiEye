@@ -178,9 +178,7 @@ startclassificationmodeltraining.py
 
 https://github.com/thtrieu/darkflow/ 에 원본이 존재하지만, MAiEye 에는 기본적으로 설치되어 있습니다. <br>
 
-```
-(base) C: [your own path] \darkflow-master> 
-```
+그래서 따로 만질 필요가 없습니다.
 
 <br>
 
@@ -260,7 +258,7 @@ https://drive.google.com/open?id=19LHxJR8BRTzq-gUroIdDRCuqYk9oc35c 에서 다운
 
 1. built_graph 폴더 통째로, 
 ```
-\MAiEye\Project\Darkflow
+C: [your own path] \MAiEye\Project\Darkflow
 ```
 에 넣어 줍니다. 이 weight 파일들은, 파란버섯을 detection 합니다.
 
@@ -268,7 +266,7 @@ https://drive.google.com/open?id=19LHxJR8BRTzq-gUroIdDRCuqYk9oc35c 에서 다운
 
 2. Janghoo_model.h5 파일을
 ```
-\MAiEye\Project\JanghooModule_RunWithMapleGUI\Janghoo_Model\
+C: [your own path] \MAiEye\Project\JanghooModule_RunWithMapleGUI\Janghoo_Model\
 ```
 에 넣어 줍니다. 이 weight 파일은, 4개의 마을을 classification 합니다.
 
@@ -280,6 +278,10 @@ https://drive.google.com/open?id=19LHxJR8BRTzq-gUroIdDRCuqYk9oc35c 에서 다운
 에 넣어 줍니다. 이 weight 파일은, 약초와 광물 일부를 detection 합니다.
 
 <br>
+<br>
+
+**실행**
+
 <br>
 
 모델을 모두 준비한 후, 실행명령은 다음과 같습니다.
