@@ -191,7 +191,7 @@ def flow (videoPath, trackerType, labelName, savefolder, waitingTime) :
         # -ms 로 지정한 만큼마다, 그 프레임의 데이터와 사진을 저장함.
         if framecount % save_image_per_n_milliseconds == 0 :
             filedata.writeAndSave(originalframe)
-            framecount = 0 # int 자료형 overflow 방지
+            # framecount = 0 # int 자료형 overflow 방지
 
         # quit on ESC button
         if cv2.waitKey(1) & 0xFF == 27:  # Esc pressed
