@@ -10,4 +10,8 @@ new md
 #2019.11.26
 - gitkraken를 github와 연결하여 push&pull를 함
 
+#2019.12.03
+-darkflow로 학습시키는 방법을 배워서 광물과 약초의 학습방법을 배움
+-
+
 
