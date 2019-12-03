@@ -54,6 +54,7 @@ print('now model loading')
 model = tf.keras.models.load_model('JanghooModule_RunWithMapleGUI/Janghoo_Model/Janghoo_model.h5')
 label = ['elinia', 'henesis', 'kerningcity', 'perion']
 
+
 # 2. model : loading YOLO
 sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'Darkflow'))
 currentPath = os.getcwd()
