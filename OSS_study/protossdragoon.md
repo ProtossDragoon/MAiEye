@@ -49,3 +49,9 @@ In this case, the interpreter will look at the filename of your module, foo.py, 
 # of your module when it's imported from another module.
 __name__ = "foo"
 ```
+
+<br>
+
+### 대소문자 문제 해결
+
+- git config core.ignorecase false
