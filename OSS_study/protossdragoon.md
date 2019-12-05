@@ -4,7 +4,7 @@
 
 ### 파일의 구성
 
-- __init__.py
+- \_\_init\_\_.py
 - [dir]docs
 - [dir]modules
 - [dir]test
