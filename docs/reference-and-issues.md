@@ -3,7 +3,7 @@
 
  - 프로젝트에 필요한 공부를 한 내용들을 정리해 담았습니다. (저장소가 변경되면서 그냥 포기했습니다.)
  
-| Title | Subject | 학습경로 | 학습 성취도 | 기간 |
+| Title | Subject | 학습경로 | 성취도 | 기간 |
 |---|:---:|:---|:---:|:----:|
 | 오픈소스 SW개론 | GIT | School / Sejong Univ (pf. JH Byeon) | 80% | 2019-Fall |
 | Basics of Data Analysis | ML | School / Sejong Univ (pf. Jaewook Song) | 100% | 2019-Spring |
