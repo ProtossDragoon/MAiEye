@@ -3,18 +3,18 @@
 
  - 프로젝트에 필요한 공부를 한 내용들을 정리해 담았습니다. (저장소가 변경되면서 그냥 포기했습니다.)
  
-| Title | Subject | 학습경로 | 정리여부 | 학습 성취도 | 기간 |
-|---|:---:|:---|:---:|:---:|:----:|
-| 오픈소스 SW개론 | GIT | School / Sejong Univ (pf. JH Byeon) | x | 80% | 2019-Fall |
-| Basics of Data Analysis | ML | School / Sejong Univ (pf. Jaewook Song) | x | 100% | 2019-Spring |
-| Deep Leraning Zero to All 1 | AI | Youtube (pf. Sung kim) | x | 100% | 2019-Spring |
-| 양재 AI School Summer Camp | AI | Yangjae | o | 이수 | 2019-Summer |
-| CS231N | CV | Youtube / Stanford Univ (pf. Fei-Fei Li) | o | 20% | 2019 |
-| Computer Vision | CV | ... | o | ? | 2019 |
-| Django Tutorial | Web Server | Django Official Hompage | o | 20% | 2019-spring |
-| 생활코딩 Database | Web Server | Opentutorials.org | x | 30% | 2019-spring |
-| RL Zero to All | RL | Youtube (pf. Sung kim) | x | 40% | 2019-Summer |
-| 강화학습 기초 | RL | Youtube (pf. David Silver, with 팡요랩) | x | 10% | 2019-Fall |
+| Title | Subject | 학습경로 | 학습 성취도 | 기간 |
+|---|:---:|:---|:---:|:----:|
+| 오픈소스 SW개론 | GIT | School / Sejong Univ (pf. JH Byeon) | 80% | 2019-Fall |
+| Basics of Data Analysis | ML | School / Sejong Univ (pf. Jaewook Song) | 100% | 2019-Spring |
+| Deep Leraning Zero to All 1 | AI | Youtube (pf. Sung kim) | 100% | 2019-Spring |
+| 양재 AI School Summer Camp | AI | Yangjae | 이수 | 2019-Summer |
+| CS231N | CV | Youtube / Stanford Univ (pf. Fei-Fei Li) | 20% | 2019 |
+| Computer Vision | CV | ... | ? | 2019 |
+| Django Tutorial | Web Server | Django Official Hompage | 20% | 2019-spring |
+| 생활코딩 Database | Web Server | Opentutorials.org | 30% | 2019-spring |
+| RL Zero to All | RL | Youtube (pf. Sung kim) | 40% | 2019-Summer |
+| 강화학습 기초 | RL | Youtube (pf. David Silver, with 팡요랩) | 10% | 2019-Fall |
 
 
 **다양한 CV 모델들과 RL 이론을 이해하기 위하여, 대학에서 수학공부와 알고리즘 공부를 하고 있습니다.**
