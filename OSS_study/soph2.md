@@ -11,7 +11,7 @@
 
 darkflow-master 폴더를 darkflow로 이름 변경하고 기존 darkflow를 darkflow222로 변경해서 실행하고 있음
 
---------------------
+/////////////////////////////
 
 (base) C:\Users\LG\Documents\GitHub\MAiEye\Project\JanghooModule_RoIExtraction>python roi_multi_tracking_in_video.py -t CSRT -sp C:\Users\LG\Documents\GitHub\MAiEye\Project\ -ms 5 -v C:\Users\LG\Desktop\KakaoTalk_Video_20191126_0026_05_032.mp4 --label stump
 
@@ -70,7 +70,7 @@ Traceback (most recent call last):
     multiTracker = cv2.MultiTracker_create()
 AttributeError: module 'cv2.cv2' has no attribute 'MultiTracker_create'
 
---------------------
+/////////////////////////////
 위의 AttributeError 오류 뜸
 ```
 (base) C:\Users\LG\Documents\GitHub\MAiEye\Project\JanghooModule_RoIExtraction>pip install opencv-contrib-python
@@ -79,7 +79,7 @@ AttributeError: module 'cv2.cv2' has no attribute 'MultiTracker_create'
 
 ##2019.11.30
 
---------------------------
+/////////////////////////////
 (base) C:\Users\LG>python C:\Users\LG\Documents\GitHub\MAiEye\Project\runmodel.py
 Traceback (most recent call last):
   File "C:\Users\LG\Documents\GitHub\MAiEye\Project\runmodel.py", line 16, in <module>
@@ -91,13 +91,13 @@ Traceback (most recent call last):
   File "C:\ProgramData\Anaconda3\lib\site-packages\mss\tools.py", line 52, in to_png
     with open(output, "wb") as fileh:
 FileNotFoundError: [Errno 2] No such file or directory: 'JanghooModule_RunWithMapleGUI/tmpfolder/fullscreen.png'
----------------------------
+/////////////////////////////
 파일이 있는데 없다고 에러 뜸
 "C:\Users\LG\Documents\GitHub\MAiEye\Project\JanghooModule_RunWithMapleGUI\tmpfolder\fullscreen.png"
 
 해결!! 현재 위치를 project에 있어야함 runmodel.py:16에서 사용하는 mss().shot이 상대주소를 사용하여 움직이기 때문에 찾지 못한 거였음
 
----------------------------------
+/////////////////////////////
 (base) C:\Users\LG>python C:\Users\LG\Documents\GitHub\MAiEye\Project\runmodel.py
 Traceback (most recent call last):
   File "C:\Users\LG\Documents\GitHub\MAiEye\Project\runmodel.py", line 16, in <module>
@@ -111,7 +111,7 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'JanghooModule_RunWithMapleGUI/tmpfolder/fullscreen.png'
 
 (base) C:\Users\LG>cd C:\Users\LG\Documents\GitHub\MAiEye\Project
-
+/////////////////////////////
 (base) C:\Users\LG\Documents\GitHub\MAiEye\Project>python runmodel.py
 JanghooModule_RunWithMapleGUI/tmpfolder/fullscreen.png
 960 540
@@ -142,9 +142,9 @@ Traceback (most recent call last):
   File "runmodel.py", line 61, in <module>
     from darkflow.net.build import TFNet
 ModuleNotFoundError: No module named 'darkflow.net'
------------------------------------
+/////////////////////////////
 darkflow.net 오류 뜸 -> 인터넷에서  protobuf==3.5.2을 설치하라 나옴
------------------------------------
+/////////////////////////////
 (base) C:\Users\LG\Documents\GitHub\MAiEye\Project>pip install protobuf==3.5.2
 Collecting protobuf==3.5.2
   Downloading https://files.pythonhosted.org/packages/c0/bc/c538b14c738366284faffd276ee5cdc053e4a999490a62c74bbc265a7635/protobuf-3.5.2-py2.py3-none-any.whl (388kB)
@@ -158,11 +158,11 @@ Installing collected packages: protobufr
     Uninstalling protobuf-3.10.0:
       Successfully uninstalled protobuf-3.10.0
 Successfully installed protobuf-3.5.2
--------------------------------------
+/////////////////////////////
 저렇게 하면 
--------------------------------------
+/////////////////////////////
 TypeError: __init__() got an unexpected keyword argument 'serialized_options'
--------------------------------------
+/////////////////////////////
 위와 같은 에러뜸
 근데 또 인터넷 찾아보면 protobuf버전문제라고 함,,
 
