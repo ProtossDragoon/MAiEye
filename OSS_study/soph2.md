@@ -195,5 +195,60 @@ cfg파일에 region-classes수를 아까 label.txt파일에 있는 클래스 수
 annotation은 xml파일
 load -> weights파일로 학습된 결과가 저장됨, 학습시키다가 중간에 그만 두고 다시 그 중지된 그때부터 다시 학습시킬 수 있음
 
+```
 python flow --model cfg/mineral.cfg --train --annotation cleandata_oneclass_annotation --dataset cleandata_oneclass_image --save 500
-명령어 사용해서 학습 -> 
+```
+명령어 사용해서 학습
+
+##2019.12.04
+push failed 문제로 다시 clone함
+startclassificationmodeltraining.py에서 
+train_directory = 'C:/Users/LG/Documents/GitHub/MAiEye/Project/MAiEye/Data/maplestory_map_source/train'로 변경
+
+새폴더 annotation이랑 img만들고 flow darkflow로 수정
+darkflow 설치 명령어 추가해야함(readme.md에)(darkflow에서 pip install . e)
+
+```
+(base) C:\Users\LG\Documents\GitHub\MAiEye\Project>python startdatagenerator.py -s mob -t CSRT -sp C:\Users\LG\Desktop\2019_1\오픈소스및개론\xml -ms 3 -v C:\Users\LG\Desktop\2019_1\오픈소스및개론\video_source\heart_mineral_2.mp4 --label heart_mineral
+```
+이 명령어를 사용하여 datagenerate함
+
+그러면 이걸로 데이터 만들고 darkflow로 학습?
+
+//(base) C:\Users\LG\Documents\GitHub\MAiEye\Project\darkflow>python flow --model cfg/yolo-voc-maple.cfg --demo image/heart_mineral_1.mp4 --saveVideo 이걸로 데모 가능?
+
+- Darkflow 바꾸기, .h5 파일 깃허브에서 받기
+
+AttributeError: 'NoneType' object has no attribute 'shape' 	//xml파일이랑 jpg파일 수랑 안맞아서! 
+원래 datagenerator하면 jpg랑 xml둘다 저장되어야함 -> 근데 왜인지 모르게 저거start명령어는 xml만 저장됨..
+```
+python startdatagenerator.py -s mob -t CSRT -sp C:\Users\LG\ex\video_saving_path -ms 3 -v C:\Users\LG\ex\video_source\heart_mineral_1.mp4 --label heart_mineral
+```
+이걸로 하니까 됨
+
+
+최종정리!!!
+0) cfg파일에서 class수(labels.txt에 적혀져있는 수)랑 filter수 알맞게 수정하기
+1) datagenerator로 데이터 수집(xml,jpg저장) 후 -> darkflow로 학습시키기
+((labels.txt에 있는 클래스이름이랑 데이터 저거모을때 이름이랑 똑같아야 됨! startdatagenerator.py --label 이름!!
+```
+python startdatagenerator.py -s mob -t CSRT -sp C:\Users\LG\ex\video_saving_path[생성될 xml,jpg파일 위치] -ms 3 -v C:\Users\LG\ex\video_source\heart_mineral_1.mp4[데이터 생성할 동영상] --label heart_mineral[클래스 이름]
+```
+1-1)생성된 xml파일을 darkflow/annotation 폴더로 이동하기
+1-2)생성된 jpg파일을 darflow/image 폴더로 이동하기
+2) 생성된 이미지파일과 xml파일을 이용하여 darkflow로 학습시키기
+```
+python flow --model cfg\maple.cfg --train --annotation annotation --dataset image --save 30 --lr 0.0001 --load -1
+```
+--lr learning rate 0.0001로 작게하면 금방금방 loss가 줄어들음 --load -1은 weights 파일 저장시키기 위해서
+3) pb파일 생성하기
+```
+## Saving the lastest checkpoint to protobuf file
+flow --model cfg/maple.cfg --load -1 --savepb
+```
+4) .h5파일인가 그거 사용해서 runmodel.py 실행하기
+google drive에서 h5파일 다운받기
+
+
+!!TO DO LIST!!
+h5파일 어떻게 변형하는지 알아보기, 
