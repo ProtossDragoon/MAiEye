@@ -128,13 +128,13 @@ args = vars(ap.parse_args())
 
 | -s type | -s : map | -s : mob | -s : land (아직 구현안됨) | -s : mineral |
 |:-------:|:--------:|:--------:|:------------------------:|:-------------:|
-| **call module** | map capture module | RoI Extraction module | RoI Extraction module | |
-| -v | Need(경로지정) | Need(영상지정) | Need(영상지정) | |
-| -l | Need | Need | Need | |
-| -t | x | Need | Need | |
-| -ms | Need | Need | Need | |
-| -sp | Need | Need | Need | |
-| -is | Need | x | x | |
+| **call module** | map capture module | RoI Extraction module | RoI Extraction module | - |
+| -v | Need(경로지정) | Need(영상지정) | Need(영상지정) | - |
+| -l | Need | Need | Need | - |
+| -t | x | Need | Need | - |
+| -ms | Need | Need | Need | - |
+| -sp | Need | Need | Need | - |
+| -is | Need | x | x | - |
 
 
 <br>
