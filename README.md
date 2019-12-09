@@ -277,6 +277,8 @@ C: [your own path] \MAiEye\Project\JanghooModule_RunWithMapleGUI\Janghoo_Model\
 ```
 에 넣어 줍니다. 이 weight 파일은, 약초와 광물 일부를 detection 합니다.
 
+아직 약초와 광물에 대해서 demo 가 안정적이지 않아 readme 에 기록되지 않았습니다. 다음번 패치때 시작 시 모델을 선택할 수 있도록 개선하겠습니다.
+
 <br>
 <br>
 
